@@ -1,0 +1,149 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 14px;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a {
+    color: black;
+}
+a:hover {
+    text-decoration: none;
+    color:black;
+}
+ul li {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sub_menu {
+    border-bottom: 1px solid #c2c2c2;
+}
+.sub_menu ul li {
+    margin:0px 5px;
+    font-weight: bold;
+    color: black;
+}
+.logo_container span {
+    font-size: 45px;
+}
+.nav_container {
+    background: linear-gradient(to left, rgb(209,178,255), rgb(165,102,255));  
+    padding: 5px 0px; 
+    margin-bottom: 5px; 
+ 
+}
+.nav_container ul {
+    width:70%;
+}
+.nav_container ul li a{
+    font-weight: bold;
+    font-size: 16px;
+    color:white;
+}
+.search-form {
+    position: relative;
+    width: 30%;
+}
+.search-form button {
+    position: absolute;
+    top:0;
+    right:0;
+}
+
+
+/* 신간소개 + 추천도서 */
+.book_new_container h4 {
+font-size: 28px;
+font-weight: 600;
+}
+#book_wrapper {
+padding:15px;
+height: 550px;
+display: flex;
+justify-content: center;
+}
+
+#book_new {
+margin:5px;
+padding:40px;
+box-sizing: border-box;
+float:left;
+width:300px;
+height: 480px;
+border:1px solid gray;
+line-height: 160%;
+}
+
+
+#book_new p {
+text-align:center;
+margin:0;
+}
+#book_new .genre {
+padding-top: 10px;
+color:#6799FF;
+font-size: 13px;
+}
+#book_new .author {
+font-size: 13px;
+}
+
+#book_new .book_title{
+font-weight: bold;
+}        
+@media (max-width: 768px) { 
+    .nav_container ul {
+        width: 100%;
+    }
+    .nav_container .nav_contents {
+        display: block !important;
+    }
+    .nav_container ul{
+        justify-content: space-between;
+    }
+    .search-form {
+        width: 100%;
+    }            
+ } 
+ .m-1 {
+    border-radius: 50%;
+ }

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>   
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> 
+
+    <title>BookStore</title>
+    
+    <link rel="stylesheet" href="style_index.css">
+</head>
+<body>
+    <div class="sub_menu">
+        <div class="container">
+            <ul class="sub_menu_list d-flex justify-content-end p-2">
+                <a href="login.html"><li>로그인</li></a>
+                <a href="register.html"><li>회원가입</li></a>
+                <a href="#"><li>장바구니</li></a>
+            </ul>
+        </div>
+    </div>
+    <div class="logo_container">
+        <div class="container d-flex align-items-center justify-content-center">            
+            <img src="book.png" id="book" width="300px" alt="">
+            <a href="index.html"><span>BookStore</span></a>
+        </div>
+    </div>
+    <div class="nav_container">
+        <div class="container d-flex justify-content-between nav_contents">
+            <ul class="nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.aladin.co.kr/shop/common/wbest.aspx?BranchType=1">베스트셀러</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.aladin.co.kr/shop/common/wnew.aspx?BranchType=1">최신도서</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.aladin.co.kr/home/wbookmain.aspx">국내도서</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.aladin.co.kr/home/wforeignmain.aspx">외국도서</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.aladin.co.kr/home/webookmain.aspx?start=main">eBook</a>
+                </li>                 
+            </ul>
+            <form class="search-form" action="/action_page.php">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    <div class="banner">
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+                <div class="carousel-item active" style="background-color:#0a254d">
+                    <div class="container">
+                        <img src="event1.png" alt="Los Angeles" width="100%" height="500">  
+                    </div>                    
+                </div>
+                <div class="carousel-item" style="background-color:#FFE600">
+                    <div class="container">
+                        <img src="event4.png" alt="Los Angeles" width="100%" height="500">  
+                    </div>                    
+                </div>
+                <div class="carousel-item" style="background-color:#F5F7F6">
+                    <div class="container">
+                        <img src="event3.jpg" alt="Los Angeles" width="100%" height="500">  
+                    </div>                    
+                </div>
+            </div>
+
+          </div>
+    </div>
+
+    
+<!--신간 소개-->
+<div class="container book_new_container">
+    <h4 style="text-align:center; padding-top: 20px;">화제의 신간</h4>
+    <div id="book_wrapper">
+
+    <div id="book_new">
+        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=301180246">
+        <img src="new1.jpg" alt=""> 
+        <p class="genre">[컴퓨터/it]</p>
+        <p class="book_title">MySQL 성능 최적화 고성능 시스템 구축을 위한 전략과 최적화 기법</p>
+        <p class="author">실비아 보트로스</p>
+    </a>
+    </div>
+    
+    <div id="book_new">
+       <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=301692224&start=slayer">
+        <img src="new2.jpg" alt=""> 
+        <p class="genre">[경제/경영]</p>
+        <p class="book_title">트렌드 코리아 2023</p>
+        <p class="author">김난도</p>
+    </a> 
+    </div>
+    
+    <div id="book_new">
+        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=301548119&start=slayer">
+        <img src="new3.jpg" alt=""> 
+        <p class="genre">[인문]</p>
+        <p class="book_title">참 괜찮은 태도</p>
+        <p class="author">박지현</p>
+    </a>
+    </div>
+    
+    <div id="book_new">
+        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=301365826&start=slayer">
+        <img src="new4.jpg" alt=""> 
+        <p class="genre">[취미/실용/스포츠]</p>
+        <p class="book_title">쓰면 쓸수록 돈이 모이는 가계부(2023)</p>
+        <p class="author">안선우</p>
+        </a>
+    </div>
+    </div>
+    
+    <h4 style="text-align:center; padding-top: 20px;">추천도서</h4>
+    <div id="book_wrapper">
+
+    <div id="book_new">
+        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=275419192">
+        <img src="best1.jpg" alt=""> 
+        <p class="genre">[소설]</p>
+        <p class="book_title">밝은밤</p>
+        <p class="author">최은영</p>
+        </a>
+    </div>
+    
+    <div id="book_new">
+        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=254700620&start=slayer">
+        <img src="best2.jpg" alt=""> 
+        <p class="genre">[인문]</p>
+        <p class="book_title">공정하다는 착각</p>
+        <p class="author">마이클 샌델</p>
+        </a>
+    </div>
+    
+    <div id="book_new">
+        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=255097575&start=slayer">
+        <img src="best3.jpg" alt=""> 
+        <p class="genre">[시/에세이]</p>
+        <p class="book_title">어린이라는 세계</p>
+        <p class="author">김소영</p>
+        </a>
+    </div>
+    
+    <div id="book_new">
+        <a href="https://www.aladin.co.kr/shop/wproduct.aspx?ItemId=284254515&start=slayer">
+        <img src="best4.jpg" alt=""> 
+        <p class="genre">[소설]</p>
+        <p class="book_title">작별하지 않는다.</p>
+        <p class="author">한강</p>
+        </a>
+    </div>
+    </div>
+</div>
+   <!--footer-->
+   <footer class="bg-light text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #3b5998;"
+          href="https://ko-kr.facebook.com/"
+          role="button"
+          target="_blank"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #55acee;"
+          href="https://twitter.com/?lang=ko"
+          role="button"
+          target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+        <!-- Google -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #dd4b39;"
+          href="https://www.google.com"
+          role="button"
+          target="_blank"
+          ><i class="fab fa-google"></i
+        ></a>
+  
+        <!-- Instagram -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #ac2bac;"
+          href="https://www.instagram.com/"
+          role="button"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #0082ca;"
+          href="https://kr.linkedin.com/"
+          role="button"
+          target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <!-- Github -->
+        <a
+          class="btn text-white btn-floating m-1"
+          style="background-color: #333333;"
+          href="https://github.com/"
+          role="button"
+          target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">BookStore.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+</body>
+</html>
